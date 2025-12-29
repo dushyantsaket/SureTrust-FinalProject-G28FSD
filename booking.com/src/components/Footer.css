@@ -1,0 +1,386 @@
+/* Footer Styles */
+.booking-footer {
+    background: #003580;
+    color: white;
+    padding: 3rem 0 2rem;
+    margin-top: 4rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Quick Links Section */
+.quick-links-section {
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+}
+
+.quick-links-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.quick-link-item {
+    min-height: 32px;
+}
+
+.quick-link {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.9;
+    transition: all 0.2s ease;
+    display: block;
+    padding: 4px 0;
+}
+
+.quick-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+    transform: translateY(-1px);
+}
+
+/* Footer Columns Grid */
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2.5rem;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-column {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+    min-height: 200px;
+}
+
+.column-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    color: white;
+    letter-spacing: 0.5px;
+    align-self: start;
+}
+
+/* Link Lists */
+.link-list,
+.why-booking-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.link-item {
+    min-height: 22px;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    transition: all 0.2s ease;
+    display: inline-block;
+    padding: 2px 0;
+}
+
+.footer-link:hover {
+    color: white;
+    text-decoration: underline;
+    transform: translateX(2px);
+}
+
+/* Why Booking Features */
+.why-booking-list {
+    gap: 0.875rem;
+}
+
+.why-booking-item {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.875rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem;
+    align-items: start;
+    line-height: 1.4;
+    min-height: 20px;
+}
+
+.check-icon {
+    color: #4caf50;
+    font-weight: bold;
+    margin-top: 0.1rem;
+    font-size: 0.9rem;
+}
+
+/* Footer Controls */
+.footer-controls {
+    padding-top: 2rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.language-currency {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    align-items: center;
+}
+
+.picker-container {
+    position: relative;
+}
+
+.picker-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 0.625rem 1rem;
+    color: white;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 140px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.picker-button:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+.picker-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.flag {
+    font-size: 1rem;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+}
+
+/* Divider */
+.divider {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0;
+}
+
+/* Copyright Section */
+.copyright-section {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.copyright-text {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.copyright-text p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+}
+
+.copyright-year {
+    font-weight: 500;
+}
+
+.corporate-logos {
+    display: grid;
+    place-items: center;
+}
+
+.booking-holdings {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: white;
+    opacity: 0.9;
+    padding: 0.5rem 0;
+    white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer-columns {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .quick-links-list {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+
+    .booking-footer {
+        padding: 2.5rem 0 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .quick-links-list {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .booking-footer {
+        padding: 2rem 0 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .column-title {
+        font-size: 0.95rem;
+    }
+
+    .language-currency {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .picker-button {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-columns {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .copyright-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .corporate-logos {
+        justify-content: center;
+    }
+
+    .quick-links-section {
+        padding: 1.5rem 0;
+    }
+
+    .footer-columns {
+        padding: 1.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .quick-links-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .column-title {
+        font-size: 0.95rem;
+    }
+
+    .footer-link,
+    .why-booking-item {
+        font-size: 0.85rem;
+    }
+
+    .copyright-text p {
+        font-size: 0.75rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .booking-footer {
+        padding: 1.5rem 0 1rem;
+        margin-top: 2rem;
+    }
+}
+
+/* Animation for links */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-column>* {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Focus styles for accessibility */
+.quick-link:focus,
+.footer-link:focus,
+.picker-button:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Print styles */
+@media print {
+    .booking-footer {
+        display: none;
+    }
+}
+
+/* Loading states */
+.quick-link.loading,
+.footer-link.loading {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    min-height: 14px;
+    width: 80%;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
+}

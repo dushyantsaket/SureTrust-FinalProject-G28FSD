@@ -1,0 +1,346 @@
+/* -------------------------------------------------------
+   GLOBAL
+--------------------------------------------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.search-page {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.section {
+    width: 100%;
+    max-width: 1180px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    color: #555;
+}
+
+/* -------------------------------------------------------
+   HERO SECTION (BLUE TOP AREA)
+--------------------------------------------------------- */
+
+.hero-section {
+    background: #003580;
+    padding: 40px 20px 60px;
+    color: white;
+}
+
+.top-tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    opacity: 0.8;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    font-weight: bold;
+    opacity: 1;
+    border-bottom: 2px solid white;
+    padding-bottom: 4px;
+}
+
+.hero-title {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.hero-sub {
+    margin-bottom: 25px;
+    opacity: 0.9;
+    font-size: 17px;
+}
+
+/* -------------------------------------------------------
+   FLIGHT SEARCH BOX
+--------------------------------------------------------- */
+
+.flight-search-box {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1180px;
+    margin: auto;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flight-options {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.flight-options span input {
+    margin-right: 6px;
+}
+
+.search-fields {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    align-items: end;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.field label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.field input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.date-row {
+    display: flex;
+    gap: 10px;
+}
+
+.explore-btn {
+    height: 45px;
+    background: #0071c2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.explore-btn:hover {
+    background: #005fa3;
+}
+
+/* -------------------------------------------------------
+   CONTINUE WHERE YOU LEFT OFF
+--------------------------------------------------------- */
+
+.continue-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 260px;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.continue-card span {
+    color: #777;
+    font-size: 13px;
+}
+
+/* -------------------------------------------------------
+   COUNTRY GRID
+--------------------------------------------------------- */
+
+.country-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.country-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+    transition: 0.2s;
+}
+
+.country-card:hover {
+    transform: scale(1.02);
+}
+
+.country-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.country-card span {
+    display: block;
+    padding: 12px;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------
+   POPULAR FLIGHTS GRID
+--------------------------------------------------------- */
+
+.popular-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.popular-card {
+    background: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+    transition: 0.2s;
+}
+
+.popular-card:hover {
+    transform: scale(1.02);
+}
+
+.popular-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.popular-card h4 {
+    margin: 10px;
+}
+
+.popular-card p {
+    margin: 0 10px 15px;
+    color: #777;
+    font-size: 13px;
+}
+
+/* -------------------------------------------------------
+   ACCOUNT BOX
+--------------------------------------------------------- */
+
+.account-box {
+    background: #e8f3ff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.account-box button {
+    background: #0071c2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.account-box button:hover {
+    background: #005fa3;
+}
+
+/* -------------------------------------------------------
+   FEATURES (WHY BOOK WITH US)
+--------------------------------------------------------- */
+
+.features {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.feature-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 32%;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h4 {
+    margin-bottom: 10px;
+}
+
+/* -------------------------------------------------------
+   TOP FLIGHTS GRID
+--------------------------------------------------------- */
+
+.top-flight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.top-flight-item {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.top-flight-item:hover {
+    background: #eef7ff;
+}
+
+/* -------------------------------------------------------
+   RESPONSIVE DESIGN
+--------------------------------------------------------- */
+
+@media (max-width: 900px) {
+    .search-fields {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .country-grid,
+    .popular-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+
+    .top-flight-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .search-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 27px;
+    }
+}

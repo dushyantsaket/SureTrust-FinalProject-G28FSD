@@ -1,0 +1,124 @@
+/* PAGE */
+.properties-page {
+    background: #f5f7fa;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 16px;
+}
+
+/* HEADER */
+.hero-card {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.hero-card h1 {
+    font-size: 28px;
+}
+
+.hero-card p {
+    color: #666;
+}
+
+/* PROPERTY TYPES */
+.property-scroll-wrapper {
+    overflow-x: auto;
+    padding-bottom: 12px;
+}
+
+.property-scroll {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+}
+
+.property-card {
+    min-width: 220px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.property-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.property-card h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+/* UNIQUE PLACES */
+.section-gap {
+    margin: 40px 0 16px;
+}
+
+.unique-scroll-wrapper {
+    overflow-x: auto;
+    padding-bottom: 12px;
+}
+
+.unique-scroll {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+}
+
+.unique-card {
+    min-width: 180px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.unique-card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+.unique-card h4 {
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* HOVER */
+.property-card:hover,
+.unique-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* SCROLLBAR */
+.property-scroll-wrapper::-webkit-scrollbar,
+.unique-scroll-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.property-scroll-wrapper::-webkit-scrollbar-thumb,
+.unique-scroll-wrapper::-webkit-scrollbar-thumb {
+    background: #0071c2;
+    border-radius: 4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .property-card {
+        min-width: 180px;
+    }
+
+    .unique-card {
+        min-width: 150px;
+    }
+}

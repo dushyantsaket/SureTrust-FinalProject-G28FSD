@@ -1,0 +1,601 @@
+/* ExploreFlights.css */
+.explore-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.explore-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.explore-header h1 {
+    font-size: 48px;
+    color: #003b95;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.explore-subtitle {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.search-explore {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    display: flex;
+    gap: 12px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 18px 24px;
+    border: 2px solid #003b95;
+    border-radius: 50px;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.search-input:focus {
+    box-shadow: 0 0 0 3px rgba(0, 59, 149, 0.1);
+}
+
+.explore-search-btn {
+    padding: 18px 40px;
+    background: linear-gradient(135deg, #003b95, #0064d2);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.explore-search-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 59, 149, 0.2);
+}
+
+.country-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.country-btn {
+    padding: 12px 24px;
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.country-btn:hover {
+    border-color: #003b95;
+    color: #003b95;
+}
+
+.country-btn.active {
+    background: #003b95;
+    color: white;
+    border-color: #003b95;
+}
+
+.country-dropdown {
+    padding: 12px 24px;
+    border: 2px solid #e0e0e0;
+    border-radius: 30px;
+    font-size: 16px;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+}
+
+.anywhere-section,
+.popular-flights-section,
+.top-flights-section,
+.indian-airports-section {
+    margin-bottom: 80px;
+}
+
+.anywhere-section h2,
+.popular-flights-section h2,
+.top-flights-section h2,
+.indian-airports-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.destination-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.destination-card:hover .destination-image img {
+    transform: scale(1.1);
+}
+
+.destination-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.country-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(0, 59, 149, 0.9);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.destination-info {
+    padding: 24px;
+}
+
+.destination-info h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.airport-name {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.flight-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #003b95;
+}
+
+.duration {
+    background: #f0f7ff;
+    color: #003b95;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.airlines {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.airline-tag {
+    background: #f5f5f5;
+    color: #333;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.more-airlines {
+    color: #666;
+    font-size: 12px;
+    align-self: center;
+}
+
+.popular-flights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.popular-flight-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.popular-flight-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.popular-flight-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.route {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.flight-price {
+    font-size: 28px;
+    font-weight: 700;
+    color: #003b95;
+}
+
+.popular-flight-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.dates {
+    color: #666;
+    font-size: 16px;
+}
+
+.type {
+    background: #e6f7e6;
+    color: #2e7d32;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.book-now-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #003b95, #0064d2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.book-now-btn:hover {
+    background: linear-gradient(135deg, #002b75, #0052a3);
+}
+
+.top-flights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.top-flight-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    border: 1px solid #e0e0e0;
+}
+
+.top-flight-card:hover {
+    transform: translateY(-4px);
+    border-color: #003b95;
+    box-shadow: 0 8px 25px rgba(0, 59, 149, 0.15);
+}
+
+.top-flight-header {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.top-flight-header h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.distance {
+    color: #666;
+    font-size: 14px;
+}
+
+.top-flight-body {
+    margin-bottom: 20px;
+}
+
+.airport-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 8px 0;
+}
+
+.airport-info:last-child {
+    margin-bottom: 0;
+}
+
+.label {
+    color: #666;
+    font-size: 14px;
+}
+
+.value {
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.price-value {
+    color: #003b95;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.top-flight-footer {
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.explore-btn {
+    width: 100%;
+    padding: 12px;
+    background: #003b95;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.explore-btn:hover {
+    background: #002b75;
+}
+
+.indian-airports-section {
+    background: #f8f9fa;
+    padding: 60px 40px;
+    border-radius: 24px;
+    margin-top: 80px;
+}
+
+.airports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.airport-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.airport-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.airport-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.airport-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.airport-code-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: #003b95;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.airport-info {
+    padding: 24px;
+}
+
+.airport-info h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.airport-city {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.airport-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.stat {
+    background: #f8f9fa;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-label {
+    display: block;
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-value {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #003b95;
+}
+
+.view-flights-btn {
+    width: 100%;
+    padding: 14px;
+    background: transparent;
+    color: #003b95;
+    border: 2px solid #003b95;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.view-flights-btn:hover {
+    background: #003b95;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .explore-header h1 {
+        font-size: 32px;
+    }
+
+    .explore-subtitle {
+        font-size: 16px;
+    }
+
+    .search-explore {
+        flex-direction: column;
+    }
+
+    .country-filters {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 10px;
+    }
+
+    .destinations-grid,
+    .popular-flights-grid,
+    .top-flights-grid,
+    .airports-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .indian-airports-section {
+        padding: 40px 20px;
+    }
+
+    .anywhere-section h2,
+    .popular-flights-section h2,
+    .top-flights-section h2,
+    .indian-airports-section h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .explore-container {
+        padding: 20px 15px;
+    }
+
+    .destination-card,
+    .popular-flight-card,
+    .top-flight-card,
+    .airport-card {
+        padding: 16px;
+    }
+
+    .destination-info h3 {
+        font-size: 20px;
+    }
+
+    .flight-price {
+        font-size: 24px;
+    }
+}

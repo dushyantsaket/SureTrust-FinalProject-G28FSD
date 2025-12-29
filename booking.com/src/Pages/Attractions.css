@@ -1,0 +1,141 @@
+/* GENERAL */
+.attractions-page {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* HERO */
+.hero {
+    background: #003580;
+    color: #fff;
+    padding: 50px 20px 80px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.search-box {
+    background: #fff;
+    margin-top: 30px;
+    display: flex;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 900px;
+}
+
+.search-box input,
+.search-box button {
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.search-box input {
+    flex: 2;
+}
+
+.search-btn {
+    background: #0071c2;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* CALENDAR */
+.calendar {
+    background: #fff;
+    color: #000;
+    margin-top: 15px;
+    padding: 15px;
+    width: 320px;
+    border-radius: 6px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+}
+
+.calendar-grid span {
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calendar-grid span:hover {
+    background: #0071c2;
+    color: #fff;
+}
+
+/* DESTINATIONS */
+.destinations {
+    padding: 40px 20px;
+}
+
+.destinations h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    position: relative;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    padding: 12px;
+    background: linear-gradient(to top, rgba(0, 0, 0, .7), transparent);
+    color: #fff;
+    width: 100%;
+}
+
+.overlay h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.overlay p {
+    margin: 4px 0 0;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input,
+    .search-box button {
+        width: 100%;
+    }
+}

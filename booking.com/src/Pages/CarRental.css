@@ -1,0 +1,982 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    color: #e8e8e8;
+    background-color: #fff;
+    line-height: 1.4;
+}
+
+.car-rental-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+.header {
+    background-color: #003580;
+    color: white;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header-logo .logo-link {
+    display: inline-block;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.currency-btn,
+.language-btn,
+.help-link,
+.register-btn,
+.login-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 2px;
+    transition: background-color 0.2s;
+}
+
+.language-btn {
+    padding: 2px;
+}
+
+.language-btn img {
+    width: 24px;
+    height: 16px;
+    border-radius: 1px;
+}
+
+.help-link {
+    text-decoration: none;
+}
+
+.register-btn {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login-btn {
+    background-color: white;
+    color: #003580;
+    font-weight: 500;
+}
+
+.currency-btn:hover,
+.language-btn:hover,
+.help-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.register-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.login-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Main Navigation */
+.main-nav {
+    background-color: white;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    gap: 24px;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    display: inline-block;
+    padding: 16px 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-menu a:hover {
+    color: #0071c2;
+}
+
+.nav-menu .active a {
+    color: #0071c2;
+}
+
+.nav-menu .active a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #0071c2;
+}
+
+.more-btn {
+    background: none;
+    border: none;
+    padding: 16px 0;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    color: #0071c2;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.hero-section h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.hero-section p {
+    font-size: 16px;
+    color: #e8e8e8;
+}
+
+/* Search Section */
+.search-section {
+    background-color: #febb02;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.search-row {
+    display: flex;
+    gap: 16px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 0 8px;
+}
+
+.input-with-icon input {
+    flex: 1;
+    border: none;
+    padding: 12px 8px;
+    font-size: 14px;
+    outline: none;
+    background: transparent;
+}
+
+.location-icon,
+.time-icon,
+.calendar-icon {
+    color: #666;
+    margin-right: 8px;
+}
+
+.clear-btn {
+    background: none;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.date-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.time-select {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0 8px;
+}
+
+.time-select select {
+    flex: 1;
+    border: none;
+    padding: 12px 8px;
+    font-size: 14px;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.form-options {
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.checkmark {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ddd;
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.checkbox-group input[type="checkbox"]:checked+label .checkmark::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #003580;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.search-btn {
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    align-self: flex-start;
+}
+
+.search-btn:hover {
+    background-color: #005999;
+}
+
+/* Genius Banner */
+.genius-banner {
+    background-color: #f5f7fa;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.banner-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.banner-card {
+    display: flex;
+    background: linear-gradient(135deg, #1a4e8a 0%, #003580 100%);
+    border-radius: 8px;
+    padding: 24px;
+    color: white;
+    align-items: center;
+    gap: 24px;
+}
+
+.banner-text {
+    flex: 1;
+}
+
+.banner-text h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.banner-text p {
+    font-size: 14px;
+    margin-bottom: 16px;
+    opacity: 0.9;
+}
+
+.banner-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.signin-btn,
+.register-btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.signin-btn {
+    background-color: white;
+    color: #003580;
+    border: none;
+}
+
+.signin-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.register-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.register-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.banner-image {
+    flex-shrink: 0;
+}
+
+.banner-image img {
+    width: 120px;
+    height: 120px;
+}
+
+/* USP Section */
+.usp-section {
+    margin-bottom: 48px;
+}
+
+.usp-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.usp-cards {
+    display: flex;
+    gap: 24px;
+}
+
+.usp-card {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.usp-icon {
+    flex-shrink: 0;
+}
+
+.usp-icon img {
+    width: 48px;
+    height: 48px;
+}
+
+.usp-content h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.usp-content p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* FAQ Section */
+.faq-section {
+    margin-bottom: 48px;
+}
+
+.faq-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.faq-columns {
+    display: flex;
+    gap: 48px;
+}
+
+.faq-column {
+    flex: 1;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 16px;
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.faq-question span {
+    flex: 1;
+    margin-right: 16px;
+}
+
+.faq-icon {
+    flex-shrink: 0;
+    transition: transform 0.2s;
+}
+
+.faq-icon.expanded {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding-bottom: 16px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Destinations Section */
+.destinations-section {
+    margin-bottom: 48px;
+}
+
+.destinations-header h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.destinations-header p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.destinations-tabs {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.tab-btn {
+    padding: 8px 16px;
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tab-btn:hover {
+    border-color: #0071c2;
+    color: #0071c2;
+}
+
+.tab-btn.active {
+    background-color: #0071c2;
+    border-color: #0071c2;
+    color: white;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.destination-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.destination-image {
+    flex-shrink: 0;
+}
+
+.destination-image img {
+    width: 64px;
+    height: 64px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.destination-info {
+    flex: 1;
+}
+
+.destination-name {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0071c2;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+
+.destination-name:hover {
+    text-decoration: underline;
+}
+
+.destination-locations {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.destination-price {
+    font-size: 14px;
+    color: #666;
+}
+
+.destination-price span {
+    color: #333;
+    font-weight: 600;
+}
+
+.show-more-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto;
+    padding: 12px 24px;
+    background: none;
+    border: 1px solid #0071c2;
+    border-radius: 4px;
+    color: #0071c2;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.show-more-btn:hover {
+    background-color: #f0f7ff;
+}
+
+.show-more-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Footer */
+.footer {
+    background-color: #f5f5f5;
+    padding: 40px 24px 24px;
+    margin-top: auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 32px;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-column {
+    min-width: 180px;
+}
+
+.footer-column h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #0071c2;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 24px;
+    border-top: 1px solid #ddd;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-nav {
+        padding: 12px;
+    }
+
+    .header-actions {
+        gap: 8px;
+    }
+
+    .nav-menu {
+        padding: 0 12px;
+        gap: 12px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .main-content {
+        padding: 16px;
+    }
+
+    .search-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .form-options {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .usp-cards {
+        flex-direction: column;
+    }
+
+    .faq-columns {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .banner-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-buttons {
+        justify-content: center;
+    }
+
+    .destinations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header-actions .currency-btn,
+    .header-actions .help-link {
+        display: none;
+    }
+
+    .hero-section h1 {
+        font-size: 24px;
+    }
+
+    .destinations-tabs {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .tab-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* Add this section for consistent image handling */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Header Styles */
+.language-btn img {
+    width: 24px;
+    height: 16px;
+    border-radius: 1px;
+    object-fit: contain;
+}
+
+/* Genius Banner */
+.banner-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+/* USP Section */
+.usp-icon img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+/* Destinations Section */
+.destination-image {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* For cities with no image, show placeholder */
+.destination-image:has(img[src=""]) {
+    background-color: #e6e6e6;
+    position: relative;
+}
+
+.destination-image:has(img[src=""])::after {
+    content: attr(alt);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Airport images - specific styling */
+.destinations-grid .destination-card:nth-child(n+4) .destination-image {
+    background-color: #003580;
+}
+
+.destinations-grid .destination-card:nth-child(n+4) .destination-image img {
+    object-fit: contain;
+    padding: 8px;
+}
+
+/* FAQ Section - ensure no images overflow */
+.faq-answer img {
+    max-width: 100%;
+    height: auto;
+    margin: 8px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .banner-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .destination-image {
+        width: 64px;
+        height: 64px;
+    }
+
+    .usp-icon img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-image img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .destination-image {
+        width: 56px;
+        height: 56px;
+    }
+
+    .destination-image:has(img[src=""])::after {
+        font-size: 10px;
+        padding: 4px;
+    }
+}
+
+/* Update the destinations section to use proper image placeholders */
+.destinations-section .destination-card {
+    position: relative;
+}
+
+.destinations-section .destination-image {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+}
+
+.destinations-section .destination-image img:not([src]),
+.destinations-section .destination-image img[src=""],
+.destinations-section .destination-image img:not([src*="."]) {
+    display: none;
+}
+
+.destinations-section .destination-image:empty::after,
+.destinations-section .destination-image:has(img[src=""])::after,
+.destinations-section .destination-image:has(img:not([src*="."]))::after {
+    content: attr(data-alt);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #666;
+    font-size: 11px;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    padding: 0 4px;
+}
+
+/* Ensure all SVG icons maintain aspect ratio */
+svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+/* Time select and date button icons */
+.time-select svg,
+.date-btn svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}

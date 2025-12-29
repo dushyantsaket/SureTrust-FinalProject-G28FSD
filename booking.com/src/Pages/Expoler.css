@@ -1,0 +1,31 @@
+/* Add to HomePage.css */
+.explore-section {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+.explore-btn {
+    padding: 16px 40px;
+    background: linear-gradient(135deg, #f05537, #ff6b4a);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.explore-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(240, 85, 55, 0.2);
+    background: linear-gradient(135deg, #e04527, #ff5b3a);
+}
+
+.explore-text {
+    margin-top: 12px;
+    color: #666;
+    font-size: 14px;
+}

@@ -1,0 +1,224 @@
+/* FlightCard.css */
+
+.flight-card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.flight-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.flight-card__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flight-card__main {
+    flex: 1;
+}
+
+.flight-card__timeline {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.flight-card__time-container {
+    min-width: 100px;
+}
+
+.flight-card__time {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111827;
+}
+
+.flight-card__airport {
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+.flight-card__route {
+    flex: 1;
+}
+
+.flight-card__route-line {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+.flight-card__line {
+    height: 1px;
+    background-color: #d1d5db;
+    flex: 1;
+}
+
+.flight-card__stops-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    background-color: #dcfce7;
+    border-radius: 9999px;
+}
+
+.flight-card__stops-icon {
+    width: 1rem;
+    height: 1rem;
+    transform: rotate(90deg);
+}
+
+.flight-card__stops-text {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #15803d;
+}
+
+.flight-card__duration {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #4b5563;
+    margin-top: 0.25rem;
+}
+
+.flight-card__airline-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.flight-card__airline-logo {
+    width: 2rem;
+    height: 2rem;
+    background-color: #f3f4f6;
+    border-radius: 0.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flight-card__airline-icon {
+    width: 1rem;
+    height: 1rem;
+    color: #4b5563;
+}
+
+.flight-card__airline-details {
+    font-size: 0.875rem;
+}
+
+.flight-card__airline-name {
+    font-weight: 500;
+    color: #111827;
+}
+
+.flight-card__flight-number {
+    font-size: 0.75rem;
+    color: #4b5563;
+}
+
+.flight-card__pricing {
+    text-align: right;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    border-left: 1px solid #e5e7eb;
+}
+
+.flight-card__badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: #dbeafe;
+    color: #1e40af;
+    font-size: 0.75rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.flight-card__price {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 0.25rem;
+}
+
+.flight-card__details-btn {
+    width: 100%;
+    background-color: #0071c2;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-bottom: 0.5rem;
+}
+
+.flight-card__details-btn:hover {
+    background-color: #005c9e;
+}
+
+.flight-card__options-link {
+    font-size: 0.875rem;
+    color: #2563eb;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.flight-card__options-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .flight-card__container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .flight-card__timeline {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .flight-card__time-container {
+        min-width: auto;
+        text-align: center;
+    }
+
+    .flight-card__route-line {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+
+    .flight-card__pricing {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid #e5e7eb;
+        padding-top: 1.5rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .flight-card__details-btn {
+        max-width: 200px;
+        margin: 0 auto 0.5rem auto;
+    }
+}

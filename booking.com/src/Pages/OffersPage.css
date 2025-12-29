@@ -1,0 +1,263 @@
+/* ===============================
+   PAGE BASE
+================================*/
+.offers-page {
+    padding: 35px 0;
+    background: #f5f7fa;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* ===============================
+   PROMO BANNER CAROUSEL
+================================*/
+.promo-carousel {
+    position: relative;
+    height: 260px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.promo-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.promo-slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+/* LEFT TEXT SECTION */
+.promo-text {
+    max-width: 50%;
+}
+
+.promo-text .caption {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0056b3;
+}
+
+.promo-text h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 14px;
+    line-height: 1.4;
+}
+
+/* PROMO IMAGE */
+.promo-image img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+/* SLIDER NAV BUTTONS */
+.carousel-btn {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    font-size: 26px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.carousel-btn:hover {
+    background: #f0f0f0;
+}
+
+.carousel-btn.left {
+    left: 15px;
+}
+
+.carousel-btn.right {
+    right: 15px;
+}
+
+/* PROMO BUTTON */
+.filled-btn {
+    background: #0071c2;
+    color: #fff;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filled-btn:hover {
+    background: #005a9b;
+}
+
+/* ===============================
+   SINGLE DAY OFFER BOX
+================================*/
+.singles-day-offer {
+    background: #003580;
+    padding: 30px;
+    border-radius: 14px;
+    color: white;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.singles-day-offer h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.singles-day-offer p {
+    margin-bottom: 14px;
+    font-size: 15px;
+}
+
+.singles-day-offer .filled-btn {
+    background: #fff;
+    color: #003580;
+    font-weight: 600;
+}
+
+.singles-day-offer .filled-btn:hover {
+    background: #dbe4ff;
+}
+
+/* ===============================
+   DEALS GRID SECTION
+================================*/
+.deals-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* CARD BASE */
+.deal-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.deal-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+/* PROPERTY IMAGE */
+.property-photo {
+    height: 150px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #eee;
+    margin-bottom: 12px;
+}
+
+.property-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CARD TEXT */
+.deal-card h3 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.muted {
+    font-size: 14px;
+    color: #666;
+}
+
+/* RATING BADGE */
+.rating-pill {
+    background: #003580;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    display: inline-block;
+    margin: 6px 0;
+}
+
+/* PRICES */
+.price-line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+.current-price {
+    font-size: 20px;
+    color: #0071c2;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* ===============================
+   RESPONSIVE STYLES
+================================*/
+@media (max-width: 768px) {
+    .promo-carousel {
+        height: auto;
+    }
+
+    .promo-slide {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .promo-text {
+        max-width: 100%;
+    }
+
+    .promo-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .carousel-btn {
+        top: 90%;
+    }
+}

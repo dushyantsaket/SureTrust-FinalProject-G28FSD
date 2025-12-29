@@ -1,0 +1,280 @@
+.seat-selection-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.booking-progress {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  padding: 0 24px;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.progress-step::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 60%;
+  right: -40%;
+  height: 2px;
+  background: #e0e0e0;
+  z-index: 0;
+}
+
+.progress-step:last-child::after {
+  display: none;
+}
+
+.progress-step.completed::after {
+  background: #003b95;
+}
+
+.progress-step span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.progress-step.completed span {
+  background: #003b95;
+  color: white;
+}
+
+.progress-step.active span {
+  background: #003b95;
+  color: white;
+  box-shadow: 0 0 0 4px rgba(0, 59, 149, 0.2);
+}
+
+.progress-step label {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+.progress-step.active label {
+  color: #003b95;
+  font-weight: 600;
+}
+
+.seat-selection-content {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flight-summary {
+  margin-bottom: 24px;
+}
+
+.flight-summary h2 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.route-info {
+  font-size: 16px;
+  color: #666;
+}
+
+.seat-maps {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.seat-map-section {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.seat-map-section h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.flight-duration {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.seat-legend {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.seat-preview {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: 2px solid #e0e0e0;
+}
+
+.seat-preview.available {
+  background: white;
+  border-color: #003b95;
+}
+
+.seat-preview.occupied {
+  background: #ccc;
+  border-color: #999;
+}
+
+.seat-preview.selected {
+  background: #003b95;
+  border-color: #003b95;
+}
+
+.seat-preview.premium {
+  background: #ffd700;
+  border-color: #ffd700;
+}
+
+.airplane-cabin {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.cabin-section {
+  flex: 1;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  max-width: 300px;
+}
+
+.seat {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #003b95;
+  border-radius: 4px;
+  background: white;
+  color: #003b95;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.seat:hover:not(.occupied) {
+  background: #e6f0ff;
+  transform: scale(1.05);
+}
+
+.seat.occupied {
+  background: #ccc;
+  border-color: #999;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.seat.selected {
+  background: #003b95;
+  color: white;
+  border-color: #003b95;
+}
+
+.seat.premium {
+  background: #ffd700;
+  border-color: #ffd700;
+  color: #333;
+}
+
+.seat.premium.selected {
+  background: #003b95;
+  color: white;
+}
+
+.cabin-aisle {
+  width: 40px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  writing-mode: vertical-rl;
+}
+
+.selected-seat-info {
+  margin-top: 16px;
+  padding: 12px;
+  background: #e6f0ff;
+  border-radius: 4px;
+  color: #003b95;
+  font-weight: 600;
+}
+
+.seat-selection-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  gap: 16px;
+}
+
+.skip-button,
+.continue-button {
+  flex: 1;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.skip-button {
+  background: white;
+  border: 2px solid #e0e0e0;
+  color: #666;
+}
+
+.skip-button:hover {
+  border-color: #003b95;
+  color: #003b95;
+}
+
+.continue-button {
+  background: #003b95;
+  border: 2px solid #003b95;
+  color: white;
+}
+
+.continue-button:hover {
+  background: #004299;
+}
+

@@ -1,0 +1,230 @@
+/* ===============================
+   GLOBAL PAGE WRAPPER
+================================*/
+.india-page {
+    width: 100%;
+    padding: 40px 0;
+    background: #f5f7fa;
+    font-family: "Poppins", sans-serif;
+}
+
+.india-page .container {
+    width: 90%;
+    margin: auto;
+    max-width: 1300px;
+}
+
+/* ===============================
+   HEADINGS
+================================*/
+h1 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    margin-top: 35px;
+    color: #222020;
+}
+
+/* ===============================
+   TRIP PLANNER BOX
+================================*/
+.trip-planner {
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(150, 134, 134, 0.08);
+    margin-bottom: 40px;
+}
+
+.trip-planner p {
+    color: #1a1717;
+    margin-bottom: 15px;
+}
+
+/* ===============================
+   VIBE BUTTONS
+================================*/
+.vibe-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.vibe-btn {
+    padding: 9px 18px;
+    border-radius: 30px;
+    border: 1.5px solid #0071c2;
+    background: #e6f1fc;
+    color: #005ea6;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.vibe-btn:hover {
+    background: #0071c2;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* ===============================
+   DESTINATION CARDS
+================================*/
+.destination-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.dest-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 14px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dest-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.dest-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.dest-card h3 {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+}
+
+.dest-card p {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+/* BUTTON STYLES */
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    font-weight: 500;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1.8px solid #0071c2;
+    color: #0071c2;
+}
+
+.btn-outline:hover {
+    background: #0071c2;
+    color: #fff;
+}
+
+.btn-primary {
+    background: #0071c2;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #005a94;
+}
+
+/* ===============================
+   HOTEL GRID
+================================*/
+.hotel-grid,
+.country-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.hotel-card,
+.country-card {
+    background: white;
+    border-radius: 14px;
+    padding: 14px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.hotel-card:hover,
+.country-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.hotel-card img,
+.country-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.hotel-card p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #2f74a5;
+    font-size: 15px;
+}
+
+.hotel-card p a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   SHOW MORE BUTTON
+================================*/
+.india-page .btn-outline:last-child {
+    margin: 30px auto 0;
+    display: block;
+    font-size: 16px;
+    padding: 10px 28px;
+    border-radius: 10px;
+}
+
+/* ===============================
+   RESPONSIVENESS
+================================*/
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .trip-planner {
+        padding: 18px;
+    }
+
+    .vibe-btn {
+        padding: 7px 14px;
+        font-size: 13px;
+    }
+
+    .dest-card img,
+    .hotel-card img,
+    .country-card img {
+        height: 130px;
+    }
+}

@@ -1,0 +1,307 @@
+.hotel-booking-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.booking-progress {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  padding: 0 24px;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.progress-step::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 60%;
+  right: -40%;
+  height: 2px;
+  background: #e0e0e0;
+  z-index: 0;
+}
+
+.progress-step:last-child::after {
+  display: none;
+}
+
+.progress-step.completed::after {
+  background: #003b95;
+}
+
+.progress-step span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.progress-step.completed span {
+  background: #003b95;
+  color: white;
+}
+
+.progress-step.active span {
+  background: #003b95;
+  color: white;
+  box-shadow: 0 0 0 4px rgba(0, 59, 149, 0.2);
+}
+
+.progress-step label {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+.progress-step.active label {
+  color: #003b95;
+  font-weight: 600;
+}
+
+.booking-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+.booking-main {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-main h2 {
+  margin: 0 0 24px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.hotel-summary-card {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: #f5f7fa;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.hotel-summary-card img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.hotel-summary-info {
+  flex: 1;
+}
+
+.hotel-summary-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.hotel-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.rating-score {
+  background: #003b95;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.rating-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.reviews-count {
+  color: #999;
+}
+
+.booking-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  color: #666;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-section h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #003b95;
+}
+
+.helper-text {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.phone-input {
+  display: flex;
+  gap: 8px;
+}
+
+.phone-input select {
+  width: 120px;
+}
+
+.phone-input input {
+  flex: 1;
+}
+
+.continue-button {
+  width: 100%;
+  padding: 16px;
+  background: #003b95;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+
+.continue-button:hover {
+  background: #004299;
+}
+
+.booking-sidebar {
+  position: sticky;
+  top: 24px;
+  height: fit-content;
+}
+
+.price-summary-card {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price-summary-card h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.price-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+}
+
+.price-row.total {
+  padding-top: 12px;
+  border-top: 2px solid #e0e0e0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.price-note {
+  padding-top: 16px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.price-note p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .booking-content {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-sidebar {
+    position: static;
+  }
+}
+

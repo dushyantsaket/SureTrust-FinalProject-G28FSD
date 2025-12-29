@@ -1,0 +1,322 @@
+/* Header Styles */
+.site-header {
+    background: #003580;
+    color: white;
+    width: 100%;
+}
+
+/* Top Bar - First Blue Section */
+.header-top-bar {
+    background: #003580;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.brand:hover {
+    color: white;
+}
+
+.header-right-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Currency Selector */
+.currency-selector {
+    position: relative;
+}
+
+.currency-dropdown {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 6px 30px 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='white' d='M5 6L0 0h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.currency-dropdown option {
+    background: #003580;
+    color: white;
+}
+
+/* Country Button */
+.country-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.country-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    border-radius: 2px;
+    object-fit: cover;
+}
+
+.country-name {
+    font-weight: 500;
+}
+
+/* Help Link */
+.help-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 0;
+    transition: opacity 0.2s;
+}
+
+.help-link:hover {
+    opacity: 0.8;
+}
+
+/* Property Link */
+.property-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.property-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Auth Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.register-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.register-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.signin-btn {
+    color: #003580;
+    background: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.signin-btn:hover {
+    background: #f0f0f0;
+}
+
+/* Navigation Bar - Second Blue Section */
+.nav-bar {
+    background: #003580;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Main Navigation Pills */
+.nav-main-pills {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.nav-pill {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.nav-pill:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.nav-pill.active {
+    background: white;
+    color: #003580;
+    border-color: white;
+    font-weight: 600;
+}
+
+/* Secondary Links */
+.nav-secondary-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.secondary-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: opacity 0.2s;
+}
+
+.secondary-link:hover {
+    opacity: 0.8;
+}
+
+.offer-badge {
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .header-right-actions {
+        gap: 15px;
+    }
+
+    .nav-secondary-links {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-top-content {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .header-right-actions {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .nav-content {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .nav-main-pills {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+
+    .nav-secondary-links {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .currency-selector,
+    .country-btn,
+    .property-link,
+    .register-btn {
+        display: none;
+    }
+
+    .header-right-actions {
+        justify-content: flex-end;
+    }
+
+    .help-link {
+        margin-right: 10px;
+    }
+
+    .nav-main-pills {
+        gap: 5px;
+    }
+
+    .nav-pill {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .nav-secondary-links {
+        gap: 15px;
+    }
+
+    .secondary-link {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand {
+        font-size: 20px;
+    }
+
+    .signin-btn {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+
+    .nav-pill {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .secondary-link {
+        font-size: 12px;
+    }
+}

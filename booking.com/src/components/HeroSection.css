@@ -1,0 +1,176 @@
+.hero-section {
+    padding: 40px 0;
+    background: #003580;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    background: #f5f7fa;
+    padding: 18px;
+    border-radius: 12px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.search-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.search-field label {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.search-field select,
+.search-field input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1.5px solid #ccc;
+    font-size: 14px;
+    background: #fff;
+}
+
+.search-btn {
+    background: #0071c2;
+    color: #fff;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.search-btn:hover {
+    background: #005a9d;
+}
+
+
+/* ===========================
+   HERO BASE SECTION
+=========================== */
+.hero-section {
+  padding: 40px 0;
+  background: #003580;
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* ===========================
+   SEARCH BOX (DESKTOP)
+=========================== */
+.search-box {
+  background: #f5f7fa;
+  padding: 18px;
+  border-radius: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.search-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.search-field label {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.search-field select,
+.search-field input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1.5px solid #ccc;
+  font-size: 14px;
+  background: #fff;
+}
+
+.search-btn {
+  background: #0071c2;
+  color: #fff;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.search-btn:hover {
+  background: #005a9d;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+/* -------- Tablets (768px) -------- */
+@media (max-width: 900px) {
+  .search-box {
+    flex-wrap: wrap;
+  }
+
+  .search-field {
+    flex: 1 1 calc(50% - 12px);
+  }
+}
+
+/* -------- Mobile (480px) -------- */
+@media (max-width: 600px) {
+
+  .hero-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    text-align: center;
+  }
+
+  .search-box {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .search-field {
+    width: 100%;
+  }
+
+  .search-field select,
+  .search-field input {
+    width: 100%;
+  }
+
+  .search-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+  }
+}

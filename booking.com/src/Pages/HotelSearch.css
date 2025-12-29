@@ -1,0 +1,43 @@
+.hotel-search-page {
+    padding: 30px;
+}
+
+.hotel-grid {
+    display: grid;
+    gap: 22px;
+}
+
+.hotel-card {
+    display: flex;
+    gap: 20px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.hotel-img {
+    width: 260px;
+    height: 210px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.rate-box {
+    background: #003580;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.price-btn {
+    margin-top: 12px;
+    padding: 10px 15px;
+    background: #0071c2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}

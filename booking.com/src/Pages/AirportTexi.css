@@ -1,0 +1,657 @@
+/* AirportTaxi.css - Booking.com Design System Implementation */
+
+/* Apply the design system theme */
+.airport-taxi-container[data-bui-theme="traveller_ex-light"] {
+    --bui-color-background-base: #fff;
+    --bui-color-foreground: #1a1a1a;
+    --bui-color-foreground-alt: #595959;
+    --bui-color-border-alt: #e7e7e7;
+    --bui-color-background-alt: #f5f5f5;
+    --bui-color-action-background: #006ce4;
+    --bui-color-on-action-background: #fff;
+    --bui-color-action-highlighted: #0057b8;
+    --bui-color-action-border: #006ce4;
+    --bui-color-action-focus: rgba(0, 108, 228, 0.24);
+    --bui-color-action-foreground: #006ce4;
+    --bui-color-brand-primary-background: #003b95;
+    --bui-color-on-brand-primary-background: #fff;
+    --bui-shadow-100: 0 2px 8px 0 rgba(26, 26, 26, 0.16);
+    --bui-shadow-200: 0 2px 16px 0 rgba(26, 26, 26, 0.24);
+
+    /* Font variables */
+    --bui-font-display-3-size: 32px;
+    --bui-font-display-3-line-height: 40px;
+    --bui-font-headline-1-size: 28px;
+    --bui-font-headline-1-line-height: 36px;
+    --bui-font-featured-3-size: 20px;
+    --bui-font-featured-3-line-height: 28px;
+    --bui-font-featured-2-size: 24px;
+    --bui-font-featured-2-line-height: 32px;
+    --bui-font-strong-1-size: 16px;
+    --bui-font-strong-1-line-height: 24px;
+    --bui-font-body-1-size: 16px;
+    --bui-font-body-1-line-height: 24px;
+    --bui-font-body-2-size: 14px;
+    --bui-font-body-2-line-height: 20px;
+    --bui-font-small-2-size: 12px;
+    --bui-font-small-2-line-height: 18px;
+
+    /* Spacing variables */
+    --bui-spacing-1x: 4px;
+    --bui-spacing-2x: 8px;
+    --bui-spacing-3x: 12px;
+    --bui-spacing-4x: 16px;
+    --bui-spacing-6x: 24px;
+    --bui-spacing-8x: 32px;
+    --bui-spacing-12x: 48px;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.42857142857143em;
+    color: var(--bui-color-foreground, #1a1a1a);
+    background-color: var(--bui-color-background-base, #fff);
+    margin: 0;
+    font-size: 14px;
+}
+
+.airport-taxi-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: var(--bui-spacing-8x, 32px) var(--bui-spacing-4x, 16px);
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--bui-color-brand-primary-background, #003b95);
+    color: var(--bui-color-on-brand-primary-background, #fff);
+    padding: var(--bui-spacing-12x, 48px) var(--bui-spacing-8x, 32px);
+    border-radius: 8px;
+    margin-bottom: var(--bui-spacing-12x, 48px);
+    box-shadow: var(--bui-shadow-100, 0 2px 8px 0 rgba(26, 26, 26, 0.16));
+}
+
+.hero-section h1 {
+    font-size: calc(var(--bui-font-display-3-size, 32px) * 0.8);
+    line-height: calc(var(--bui-font-display-3-line-height, 40px) * 0.8);
+    font-weight: 800;
+    font-family: "Blue Sans", BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    margin-bottom: var(--bui-spacing-2x, 8px);
+}
+
+@media (min-width: 576px) {
+    .hero-section h1 {
+        font-size: calc(var(--bui-font-display-3-size, 32px) * 0.9);
+        line-height: calc(var(--bui-font-display-3-line-height, 40px) * 0.9);
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-section h1 {
+        font-size: var(--bui-font-display-3-size, 32px);
+        line-height: var(--bui-font-display-3-line-height, 40px);
+    }
+}
+
+.subtitle {
+    font-size: var(--bui-font-body-1-size, 16px);
+    line-height: var(--bui-font-body-1-line-height, 24px);
+    margin-bottom: var(--bui-spacing-8x, 32px);
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+/* Search Form */
+.search-form {
+    background-color: var(--bui-color-background-base, #fff);
+    padding: var(--bui-spacing-6x, 24px);
+    border-radius: 8px;
+    box-shadow: var(--bui-shadow-200, 0 2px 16px 0 rgba(26, 26, 26, 0.24));
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--bui-spacing-4x, 16px);
+    margin-bottom: var(--bui-spacing-6x, 24px);
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: var(--bui-spacing-2x, 8px);
+    color: var(--bui-color-foreground, #1a1a1a);
+    font-size: var(--bui-font-small-2-size, 12px);
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.form-group input {
+    height: 54px;
+    padding: 0 12px;
+    border: 2px solid var(--bui-color-border-alt, #e7e7e7);
+    border-radius: var(--bui-spacing-1x, 4px);
+    font-size: var(--bui-font-body-1-size, 16px);
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--bui-color-action-border, #006ce4);
+}
+
+.form-options {
+    display: flex;
+    gap: var(--bui-spacing-8x, 32px);
+    margin-bottom: var(--bui-spacing-6x, 24px);
+    flex-wrap: wrap;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: var(--bui-spacing-2x, 8px);
+    font-weight: 500;
+    color: var(--bui-color-foreground, #1a1a1a);
+    cursor: pointer;
+    font-size: var(--bui-font-small-2-size, 12px);
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: var(--bui-color-action-border, #006ce4);
+}
+
+.search-button {
+    background-color: var(--bui-color-action-background, #006ce4);
+    color: var(--bui-color-on-action-background, #fff);
+    border: none;
+    padding: var(--bui-spacing-3x, 12px) var(--bui-spacing-8x, 32px);
+    font-size: var(--bui-font-body-1-size, 16px);
+    font-weight: 700;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    border-radius: var(--bui-spacing-1x, 4px);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    height: 54px;
+}
+
+.search-button:hover {
+    background-color: var(--bui-color-action-highlighted, #0057b8);
+}
+
+/* Features Section */
+.features-section {
+    margin-bottom: var(--bui-spacing-12x, 48px);
+}
+
+.features-section h2 {
+    text-align: center;
+    font-size: var(--bui-font-headline-1-size, 28px);
+    line-height: var(--bui-font-headline-1-line-height, 36px);
+    font-weight: 400;
+    font-family: "Blue Sans", BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    margin-bottom: var(--bui-spacing-8x, 32px);
+    color: var(--bui-color-foreground, #1a1a1a);
+}
+
+@media (min-width: 576px) {
+    .features-section h2 {
+        font-size: calc(var(--bui-font-headline-1-size, 28px) * 1.14);
+        line-height: calc(var(--bui-font-headline-1-line-height, 36px) * 1.11);
+    }
+}
+
+@media (min-width: 1024px) {
+    .features-section h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--bui-spacing-8x, 32px);
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.feature-card {
+    background-color: var(--bui-color-background-base, #fff);
+    padding: var(--bui-spacing-6x, 24px);
+    border-radius: 8px;
+    box-shadow: var(--bui-shadow-100, 0 2px 8px 0 rgba(26, 26, 26, 0.16));
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: var(--bui-spacing-4x, 16px);
+}
+
+.feature-card h3 {
+    font-size: var(--bui-font-featured-3-size, 20px);
+    line-height: var(--bui-font-featured-3-line-height, 28px);
+    font-weight: 400;
+    font-family: "Blue Sans", BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    margin-bottom: var(--bui-spacing-3x, 12px);
+    color: var(--bui-color-foreground, #1a1a1a);
+}
+
+.feature-card p {
+    color: var(--bui-color-foreground-alt, #595959);
+    font-size: var(--bui-font-body-2-size, 14px);
+    line-height: var(--bui-font-body-2-line-height, 20px);
+}
+
+/* Process Section */
+.process-section {
+    background-color: var(--bui-color-background-alt, #f5f5f5);
+    padding: var(--bui-spacing-12x, 48px) var(--bui-spacing-8x, 32px);
+    border-radius: 8px;
+    margin-bottom: var(--bui-spacing-12x, 48px);
+}
+
+.process-section h2 {
+    text-align: center;
+    font-size: var(--bui-font-headline-1-size, 28px);
+    line-height: var(--bui-font-headline-1-line-height, 36px);
+    font-weight: 400;
+    font-family: "Blue Sans", BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif);
+    margin-bottom: var(--bui-spacing-8x, 32px);
+    color: var(--bui-color-foreground, #1a1a1a);
+}
+
+@media (min-width: 576px) {
+    .process-section h2 {
+        font-size: calc(var(--bui-font-headline-1-size, 28px) * 1.14);
+        line-height: calc(var(--bui-font-headline-1-line-height, 36px) * 1.11);
+    }
+}
+
+@media (min-width: 1024px) {
+    .process-section h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--bui-spacing-8x, 32px);
+}
+
+@media (max-width: 768px) {
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+}
+
+.step {
+    text-align: center;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--bui-color-action-background, #006ce4);
+    color: var(--bui-color-on-action-background, #fff);
+    font-weight: 700;
+    border-radius: 50%;
+    margin-bottom: var(--bui-spacing-4x, 16px);
+    font-size: var(--bui-font-body-1-size, 16px);
+}
+
+.step h3 {
+    font-size: var(--bui-font-featured-3-size, 20px);
+    line-height: var(--bui-font-featured-3-line-height, 28px);
+    font-weight: 400;
+    font-family: "Blue Sans", BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    margin-bottom: var(--bui-spacing-3x, 12px);
+    color: var(--bui-color-foreground, #1a1a1a);
+}
+
+.step p {
+    color: var(--bui-color-foreground-alt, #595959);
+    font-size: var(--bui-font-body-2-size, 14px);
+    line-height: var(--bui-font-body-2-line-height, 20px);
+}
+
+/* Vehicles Section */
+.vehicles-section {
+    margin-bottom: var(--bui-spacing-12x, 48px);
+}
+
+.vehicles-section h2 {
+    font-size: var(--bui-font-headline-1-size, 28px);
+    line-height: var(--bui-font-headline-1-line-height, 36px);
+    font-weight: 400;
+    font-family: "Blue Sans", BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif);
+    margin-bottom: var(--bui-spacing-8x, 32px);
+    color: var(--bui-color-foreground, #1a1a1a);
+}
+
+@media (min-width: 576px) {
+    .vehicles-section h2 {
+        font-size: calc(var(--bui-font-headline-1-size, 28px) * 1.14);
+        line-height: calc(var(--bui-font-headline-1-line-height, 36px) * 1.11);
+    }
+}
+
+@media (min-width: 1024px) {
+    .vehicles-section h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+.passenger-filter {
+    display: flex;
+    align-items: center;
+    gap: var(--bui-spacing-4x, 16px);
+    margin-bottom: var(--bui-spacing-8x, 32px);
+    flex-wrap: wrap;
+}
+
+.passenger-filter label {
+    font-weight: 500;
+    color: var(--bui-color-foreground-alt, #595959);
+    font-size: var(--bui-font-small-2-size, 12px);
+}
+
+.filter-buttons {
+    display: flex;
+    gap: var(--bui-spacing-2x, 8px);
+}
+
+.filter-btn {
+    background-color: var(--bui-color-background-alt, #f5f5f5);
+    border: 2px solid var(--bui-color-border-alt, #e7e7e7);
+    padding: var(--bui-spacing-2x, 8px) var(--bui-spacing-4x, 16px);
+    border-radius: var(--bui-spacing-1x, 4px);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: var(--bui-font-small-2-size, 12px);
+    color: var(--bui-color-foreground, #1a1a1a);
+}
+
+.filter-btn.active {
+    background-color: var(--bui-color-action-background, #006ce4);
+    color: var(--bui-color-on-action-background, #fff);
+    border-color: var(--bui-color-action-background, #006ce4);
+}
+
+.vehicles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--bui-spacing-8x, 32px);
+}
+
+@media (max-width: 768px) {
+    .vehicles-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.vehicle-card {
+    background-color: var(--bui-color-background-base, #fff);
+    border: 2px solid var(--bui-color-border-alt, #e7e7e7);
+    border-radius: 8px;
+    padding: var(--bui-spacing-6x, 24px);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.vehicle-card.selected {
+    border-color: var(--bui-color-action-border, #006ce4);
+    box-shadow: 0 0 0 2px var(--bui-color-action-focus, rgba(0, 108, 228, 0.24));
+}
+
+.vehicle-card h3 {
+    font-size: var(--bui-font-featured-3-size, 20px);
+    line-height: var(--bui-font-featured-3-line-height, 28px);
+    font-weight: 400;
+    font-family: "Blue Sans", BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    margin-bottom: var(--bui-spacing-1x, 4px);
+    color: var(--bui-color-foreground, #1a1a1a);
+}
+
+.vehicle-description {
+    color: var(--bui-color-foreground-alt, #595959);
+    margin-bottom: var(--bui-spacing-6x, 24px);
+    font-size: var(--bui-font-body-2-size, 14px);
+    line-height: var(--bui-font-body-2-line-height, 20px);
+}
+
+.vehicle-specs {
+    margin-bottom: var(--bui-spacing-6x, 24px);
+}
+
+.spec {
+    display: flex;
+    align-items: center;
+    gap: var(--bui-spacing-2x, 8px);
+    margin-bottom: var(--bui-spacing-2x, 8px);
+    color: var(--bui-color-foreground-alt, #595959);
+    font-size: var(--bui-font-body-2-size, 14px);
+    line-height: var(--bui-font-body-2-line-height, 20px);
+}
+
+.vehicle-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: var(--bui-font-featured-2-size, 24px);
+    line-height: var(--bui-font-featured-2-line-height, 32px);
+    font-weight: 400;
+    font-family: "Blue Sans", BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    color: var(--bui-color-foreground, #1a1a1a);
+}
+
+.select-btn {
+    background-color: var(--bui-color-action-background, #006ce4);
+    color: var(--bui-color-on-action-background, #fff);
+    border: none;
+    padding: var(--bui-spacing-3x, 12px) var(--bui-spacing-6x, 24px);
+    border-radius: var(--bui-spacing-1x, 4px);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: var(--bui-font-body-1-size, 16px);
+}
+
+.select-btn:hover {
+    background-color: var(--bui-color-action-highlighted, #0057b8);
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: var(--bui-color-background-alt, #f5f5f5);
+    padding: var(--bui-spacing-12x, 48px) var(--bui-spacing-8x, 32px);
+    border-radius: 8px;
+    margin-bottom: var(--bui-spacing-12x, 48px);
+}
+
+.faq-section h2 {
+    font-size: var(--bui-font-headline-1-size, 28px);
+    line-height: var(--bui-font-headline-1-line-height, 36px);
+    font-weight: 400;
+    font-family: "Blue Sans", BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif);
+    margin-bottom: var(--bui-spacing-2x, 8px);
+    color: var(--bui-color-foreground, #1a1a1a);
+}
+
+@media (min-width: 576px) {
+    .faq-section h2 {
+        font-size: calc(var(--bui-font-headline-1-size, 28px) * 1.14);
+        line-height: calc(var(--bui-font-headline-1-line-height, 36px) * 1.11);
+    }
+}
+
+@media (min-width: 1024px) {
+    .faq-section h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+.faq-section>p {
+    color: var(--bui-color-foreground-alt, #595959);
+    margin-bottom: var(--bui-spacing-8x, 32px);
+    font-size: var(--bui-font-body-1-size, 16px);
+    line-height: var(--bui-font-body-1-line-height, 24px);
+}
+
+.faq-list {
+    display: grid;
+    gap: var(--bui-spacing-6x, 24px);
+}
+
+.faq-item h3 {
+    font-size: var(--bui-font-strong-1-size, 16px);
+    line-height: var(--bui-font-strong-1-line-height, 24px);
+    font-weight: 700;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    margin-bottom: var(--bui-spacing-2x, 8px);
+    color: var(--bui-color-foreground, #1a1a1a);
+}
+
+.faq-item p {
+    color: var(--bui-color-foreground-alt, #595959);
+    font-size: var(--bui-font-body-2-size, 14px);
+    line-height: var(--bui-font-body-2-line-height, 20px);
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid var(--bui-color-border-alt, #e7e7e7);
+    padding-top: var(--bui-spacing-12x, 48px);
+    padding-bottom: var(--bui-spacing-6x, 24px);
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--bui-spacing-8x, 32px);
+    margin-bottom: var(--bui-spacing-8x, 32px);
+}
+
+@media (max-width: 768px) {
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer-column h4 {
+    font-size: var(--bui-font-strong-1-size, 16px);
+    line-height: var(--bui-font-strong-1-line-height, 24px);
+    font-weight: 700;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    margin-bottom: var(--bui-spacing-4x, 16px);
+    color: var(--bui-color-foreground, #1a1a1a);
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: var(--bui-spacing-2x, 8px);
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: var(--bui-color-foreground-alt, #595959);
+    transition: color 0.3s;
+    font-size: var(--bui-font-body-2-size, 14px);
+    line-height: var(--bui-font-body-2-line-height, 20px);
+}
+
+.footer-column a:hover {
+    color: var(--bui-color-action-foreground, #006ce4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .hero-section h1 {
+        font-size: calc(var(--bui-font-display-3-size, 32px) * 0.7);
+        line-height: calc(var(--bui-font-display-3-line-height, 40px) * 0.7);
+    }
+
+    .features-grid,
+    .process-steps {
+        gap: var(--bui-spacing-4x, 16px);
+    }
+
+    .feature-card,
+    .step {
+        padding: var(--bui-spacing-4x, 16px);
+    }
+}
+
+@media (max-width: 576px) {
+    .airport-taxi-container {
+        padding: var(--bui-spacing-4x, 16px) var(--bui-spacing-2x, 8px);
+    }
+
+    .hero-section {
+        padding: var(--bui-spacing-6x, 24px) var(--bui-spacing-4x, 16px);
+    }
+
+    .search-form {
+        padding: var(--bui-spacing-4x, 16px);
+    }
+
+    .form-options {
+        flex-direction: column;
+        gap: var(--bui-spacing-4x, 16px);
+    }
+
+    .filter-buttons {
+        flex-wrap: wrap;
+    }
+
+    .process-section,
+    .faq-section {
+        padding: var(--bui-spacing-6x, 24px) var(--bui-spacing-4x, 16px);
+    }
+}

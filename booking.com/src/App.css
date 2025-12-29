@@ -1,0 +1,14 @@
+.app {
+  background: #f5f7fb;
+  color: #fbfbfb;
+  min-height: 100vh;
+  display: grid;
+}
+
+#root {
+  max-width: 100%;
+}
+
+main {
+  min-height: 70vh;
+}
