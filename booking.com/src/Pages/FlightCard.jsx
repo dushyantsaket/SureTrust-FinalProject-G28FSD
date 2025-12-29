@@ -15,7 +15,6 @@ export default function FlightCard({ flight }) {
   const durationMinutes = flight.duration_minutes || 0;
   const hours = Math.floor(durationMinutes / 60);
   const minutes = durationMinutes % 60;
-
   return (
     <div className="flight-card">
       <div className="flight-card__container">

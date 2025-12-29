@@ -255,7 +255,7 @@ import Header from "../components/Header";
 // import AttractionCard from "../components/AttractionCard";
 // import { supabase } from "../lib/supabase";
 import "./Attractions.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, link } from "react-router-dom";
 
 export default function Attractions() {
   const navigate = useNavigate(); // MOVE THIS INSIDE THE COMPONENT

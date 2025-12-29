@@ -199,7 +199,12 @@ function Register() {
                       className="social-button apple"
                       onClick={() => handleSocialRegister("Apple")}
                     >
-                      <span className="social-icon"></span>
+                      <span className="social-icon">
+                        <image
+                          src="https://th.bing.com/th/id/OIP.lsGmVmOX789951j9Km8RagHaHa?w=148&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                          alt="Google"
+                        />
+                      </span>
                       <span>Continue with Apple</span>
                     </button>
 
@@ -208,7 +213,12 @@ function Register() {
                       className="social-button facebook"
                       onClick={() => handleSocialRegister("Facebook")}
                     >
-                      <span className="social-icon"></span>
+                      <span className="social-icon">
+                        <image
+                          src="https://th.bing.com/th/id/OIP.lsGmVmOX789951j9Km8RagHaHa?w=148&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                          alt="Google"
+                        />
+                      </span>
                       <span>Continue with Facebook</span>
                     </button>
                   </div>

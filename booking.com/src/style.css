@@ -38,7 +38,7 @@ body {
 }
 
 .nav ul {
-    display: flex;
+    display: grid ;
     list-style: none;
     gap: 2rem;
 }
@@ -50,7 +50,7 @@ body {
 }
 
 .auth-buttons {
-    display: flex;
+    display: grid ;
     gap: 1rem;
 }
 
@@ -211,7 +211,7 @@ h2 {
 }
 
 .trending-list {
-    display: flex;
+    display: grid ;
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: 1rem;

@@ -342,7 +342,9 @@ body {
     align-items: center;
     margin-bottom: 24px;
 }
-
+.hero-section h1 {
+    
+}
 .page-title {
     font-size: 32px;
     font-weight: 700;
