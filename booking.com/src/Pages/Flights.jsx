@@ -7333,7 +7333,7 @@ const Home = ({ onSearch }) => {
             ))}
             <div className="country-card-all">
               <div>🌏</div>
-              <div>Anywhere</div>
+              <div> Anywhere</div>
               <p>Explore all destinations</p>
             </div>
           </div>
@@ -7359,19 +7359,19 @@ const Home = ({ onSearch }) => {
                 img: "https://q-xx.bstatic.com/xdata/images/city/526x420/977219.webp?k=eb68fc1a70f25a5ddca0f4ed69203b9a30ed5ae08d5923ffc045ef366c12229b&o=",
               },
               {
-                city: "Bangkok",
+                city: "Paris",
                 date: "Jan 1 - Jan 10",
                 img: "https://q-xx.bstatic.com/xdata/images/city/526x420/977041.webp?k=b9211f418b65b777dafcce9bf0dcff4a453e9542757b9d06f0581c372738a6a2&o=",
               },
               {
                 city: "Frankfurt",
                 date: "Dec 24 - Jan 15",
-                img: "https://www.booking.com/flights/route/city-to-city/in-bombay-to-in-hyderabad.html",
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDyfL5RjCgkp16q2QFFM6AW8mn9F7Pye9ryw&s",
               },
               {
                 city: "eonton",
                 date: "Jan 7 - Jan 15",
-                img: "https://q-xx.bstatic.com/xdata/images/city/64x64/684569.webp?k=5a54e1ff7cb10d54a2a7d74c4d1c3548dfd590b9ca7c1fb2272552b0741bd677&o=",
+                img: "https://r1imghtlak.mmtcdn.com/ab446576121a11edbc5a0a58a9feac02.jfif?output-quality=75&downsize=243:162&output-format=jpg",
               },
               {
                 city: "fuai",
@@ -7381,32 +7381,32 @@ const Home = ({ onSearch }) => {
               {
                 city: "Bangkok",
                 date: "Jan 1 - Jan 10",
-                img: "https://q-xx.bstatic.com/xdata/images/city/64x64/1000146.webp?k=3be6afb1e1f2595277f68a05a63fbfb4012b1d6dbf3a873ea452d1d52cdf03f3&o=",
+                img: "https://r1imghtlak.mmtcdn.com/5319d94c564311eba3a50242ac110002.jpg?output-quality=75&downsize=243:162&output-format=jpg",
               },
               {
-                city: "Frankfurt",
+                city: "Berlin",
                 date: "Dec 24 - Jan 15",
-                img: "https://flights.booking.com/fly-anywhere?toCountryCode=sg&aid=2311236&label=en-in-booking-desktop-SoQWfYhAMBURf0HSQntj1AS652796016141%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-334108349%3Alp9304059%3Ali%3Adec%3Adm",
+                img: "https://r1imghtlak.mmtcdn.com/8d0404d3-66ae-4421-a665-b23d00379ff5.jpg?output-quality=75&output-format=webp&downsize=360:*",
               },
               {
-                city: "onion",
+                city: "Kimpton Maa-Lotus",
                 date: "Jan 7 - Jan 15",
-                img: "https://flights.booking.com/fly-anywhere?toCountryCode=qa&aid=2311236&label=en-in-booking-desktop-SoQWfYhAMBURf0HSQntj1AS652796016141%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-334108349%3Alp9304059%3Ali%3Adec%3Adm",
+                img: "https://hblimg.mmtcdn.com/content/hubble/img/activity_img/mmt/acme/m_kimpton_maa_rooftop_dining_with_dj_1_l_985_1656.jpg",
               },
               {
                 city: "ayipi",
                 date: "Dec 26 - Jan 28",
-                img: "https://flights.booking.com/fly-anywhere?toCountryCode=vn&aid=2311236&label=en-in-booking-desktop-SoQWfYhAMBURf0HSQntj1AS652796016141%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-334108349%3Alp9304059%3Ali%3Adec%3Adm",
+                img: "https://r1imghtlak.mmtcdn.com/a5ba9728e8f711e987be0242ac110003.jpg?output-quality=75&output-format=webp&downsize=360:*",
               },
               {
-                city: "Bangkok",
+                city: "Rome",
                 date: "Jan 1 - Jan 10",
-                img: "https://q-xx.bstatic.com/xdata/images/city/64x64/990510.webp?k=758f5daefa0d602bae1d507ec0b6055b448338d7f0517778f2c0366175f46d80&o=",
+                img: "https://r1imghtlak.mmtcdn.com/00b7fc2a045011eeb3e70a58a9feac02.jpg?output-quality=75&downsize=243:162&output-format=webp",
               },
               {
                 city: "Frankfurt",
                 date: "Dec 24 - Jan 15",
-                img: "https://flights.booking.com/fly-anywhere?toCountryCode=mv&aid=2311236&label=en-in-booking-desktop-SoQWfYhAMBURf0HSQntj1AS652796016141%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-334108349%3Alp9304059%3Ali%3Adec%3Adm",
+                img: "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201901241343458174-efac2ca2270e11eab1f60242ac110002.jpg?output-quality=75&downsize=243:162&output-format=webp",
               },
             ].map((flight) => (
               <div key={flight.city} onClick={onSearch} className="flight-card">
@@ -7422,7 +7422,7 @@ const Home = ({ onSearch }) => {
 
         <section className="account-section">
           <div>
-            <div className="account-icon">💎</div>
+            <div className="account-icon"></div>
             <div>
               <h3>Your account, your travel</h3>
               <p>
@@ -7445,7 +7445,7 @@ const Home = ({ onSearch }) => {
 
         <section className="features-section">
           <div className="feature">
-            <span>🔍</span>
+            <span></span>
             <div>
               <h4>Search a huge selection</h4>
               <p>
@@ -7454,14 +7454,14 @@ const Home = ({ onSearch }) => {
             </div>
           </div>
           <div className="feature">
-            <span>💰</span>
+            <span></span>
             <div>
               <h4>Pay no hidden fees</h4>
               <p>Get a clear price breakdown every step of the way</p>
             </div>
           </div>
           <div className="feature">
-            <span>✈️</span>
+            <span></span>
             <div>
               <h4>Get more flexibility</h4>
               <p>Change your travel dates with the Flexible ticket option*</p>
@@ -8163,7 +8163,7 @@ const PaymentReview = ({ onPay }) => {
               <div className="flight-info">
                 <div className="flight-logo">
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/IndiGo_Airlines_logo.svg/2560px-IndiGo_Airlines_logo.svg.png"
+                    src="https://th.bing.com/th/id/OIP.c3JAVjmAAzx9K4t0_3gA9wHaFg?w=223&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
                     alt="Indigo"
                   />
                 </div>
@@ -8173,13 +8173,18 @@ const PaymentReview = ({ onPay }) => {
                     Sat, Jan 24 · 08:55 AM - 10:55 AM · Direct · 2h · Economy
                   </p>
                 </div>
-                <button>View flight details</button>
+                <button
+                  onClick={() => onViewDetails(flight)}
+                  className="/view-details-btn"
+                >
+                  View flight details
+                </button>
               </div>
 
               <div className="payment-flight-return">
                 <div className="flight-logo">
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/IndiGo_Airlines_logo.svg/2560px-IndiGo_Airlines_logo.svg.png"
+                    src="https://th.bing.com/th/id/OIP.c3JAVjmAAzx9K4t0_3gA9wHaFg?w=223&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
                     alt="Indigo"
                   />
                 </div>
@@ -8190,7 +8195,6 @@ const PaymentReview = ({ onPay }) => {
                     Economy
                   </p>
                 </div>
-                <button>View flight details</button>
               </div>
             </div>
           </div>
@@ -8274,7 +8278,7 @@ const PaymentReview = ({ onPay }) => {
                 <div className="payment-actions">
                   <button>‹ Back</button>
                   <button onClick={onPay} className="pay-now-btn">
-                    <span>🔒</span> Pay now
+                    <span></span> Pay now
                   </button>
                 </div>
               </div>
