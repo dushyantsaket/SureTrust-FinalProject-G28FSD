@@ -1,4 +1,4 @@
-=======
+react +  =======
 <div align="center" style="border: 2px solid #ccc; padding: 20px; border-radius: 12px; width: 80%; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.15);">
     <img
         width="180"
@@ -168,3 +168,8 @@ The internship certificate serves as an official acknowledgment of the successfu
 
 <<<<<<< HEAD
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+ react   +  ====    
+ https://sunny-liger-c4fc66.netlify.app/
