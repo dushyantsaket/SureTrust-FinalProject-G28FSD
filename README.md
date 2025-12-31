@@ -1,4 +1,3 @@
-<img width="575" height="961" alt="image" src="https://github.com/user-attachments/assets/84566f70-dbac-4b00-8661-0ab04e959a42" /># React + Vite
 =======
 <div align="center" style="border: 2px solid #ccc; padding: 20px; border-radius: 12px; width: 80%; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.15);">
     <img
