@@ -139,7 +139,7 @@ During my internship period, I participated in multiple community-oriented activ
 - These are just placeholder (sample) images <!-- remove this line -->
 
 <div align="center">
-<img src="https://private-user-images.githubusercontent.com/168100706/531242897-d12d4e0a-bb96-45ae-bfed-0f482687e395.jpeg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjcxOTM4MzMsIm5iZiI6MTc2NzE5MzUzMywicGF0aCI6Ii8xNjgxMDA3MDYvNTMxMjQyODk3LWQxMmQ0ZTBhLWJiOTYtNDVhZS1iZmVkLTBmNDgyNjg3ZTM5NS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MTIzMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTEyMzFUMTUwNTMzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9M2ExMWU1MDY2YTk0NmM4ZGFiZDZiNzg3OTk0NTBiOTdmOGU3Yjc4MTBlY2E0MTFlNzNlZWU1MDc1ZjZkZDI1NyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.jHnOL5bIMKQfwFf7yDufvkeepHLTQ3eP7FkCIqjqWdI
+<img src="(https://github.com/user-attachments/assets/b12f9fac-0b9e-45c6-864c-c67f4e5b56a7
 " width="30%">
 <img src="https://media.licdn.com/dms/image/v2/D561FAQEJNBia4UCa5w/feedshare-document-images_800/B56Zm5b6SJJkAg-/2/1759752731458?e=1766016000&v=beta&t=6RfJQWWqlQUPcCvDnQNW7kR6yf7w-wPDsIPxum409ck" alt="Community Service Photo 2" width="30%">
 <img src="https://media.licdn.com/dms/image/v2/D561FAQEJNBia4UCa5w/feedshare-document-images_800/B56Zm5b6SJJkAg-/3/1759752731458?e=1766016000&v=beta&t=yWaunKdRdLUKBLbmM3UjRYYz-_GSCfWEQ3_R7dW0xLM" alt="Community Service Photo 3" width="30%">
