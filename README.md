@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # React + Vite
 =======
 <div align="center" style="border: 2px solid #ccc; padding: 20px; border-radius: 12px; width: 80%; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.15);">
@@ -9,7 +9,7 @@
         src="https://github.com/user-attachments/assets/88fa5098-24b1-4ece-87df-95eb920ea721"
         style="border-radius: 10px;"
     />
->>>>>>> f8dcb1ff38de17fbb3a19dd989b75c0d4aa3090a
+
 
   <h1 align="center" style="font-family: Arial; font-weight: 600; margin-top: 15px;">SURE ProEd (formerly SURE Trust) 
       </h1>
