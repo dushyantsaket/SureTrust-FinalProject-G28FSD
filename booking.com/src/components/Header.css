@@ -4,7 +4,190 @@
     color: white;
     width: 100%;
 }
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
 
+/* Container */
+.register-container {
+  background: #f5f6f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.register-header {
+  background: #003580;
+  padding: 15px 30px;
+}
+
+.header-logo {
+  text-decoration: none;
+}
+
+.logo-text {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Main App */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+/* Panel */
+.access-panel {
+  background: #fff;
+  width: 420px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Text */
+.step-header span {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.step-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.input-wrapper {
+  margin-bottom: 15px;
+}
+
+.input-label span {
+  font-size: 13px;
+  color: #333;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccd0d5;
+  border-radius: 6px;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+
+.input-field input:focus {
+  border-color: #0071c2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 113, 194, 0.2);
+}
+
+/* Button */
+.continue-button {
+  width: 100%;
+  background: #0071c2;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.continue-button:hover {
+  background: #005999;
+}
+
+/* Divider */
+.social-divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.divider-line {
+  flex: 1;
+  border: none;
+  height: 1px;
+  background: #ddd;
+}
+
+.divider-text {
+  margin: 0 10px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Social Buttons */
+.social-button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  background: #f0f0f0;
+}
+
+.social-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Signup Section */
+.signup-text {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.signup-link {
+  color: #0071c2;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* Terms */
+.terms-text {
+  font-size: 12px;
+  color: #777;
+  margin-top: 15px;
+}
+
+.terms-link {
+  color: #0071c2;
+  text-decoration: none;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #f5f6f8;
+  font-size: 12px;
+  color: #666;
+}
 /* Top Bar - First Blue Section */
 .header-top-bar {
     background: #003580;
